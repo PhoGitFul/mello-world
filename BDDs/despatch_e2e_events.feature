@@ -1,9 +1,9 @@
-Feature:	Despatched Orders have funds Captured or Refunded depending on number of items despatched and the payment method
-		In order to ensure Customers are charged the correct amount for items despatched
-		As a business
-		When an order is Despatched
-		I want the value of any despatched items and P&P to be captured for Post Pay orders
-		And any unfulfilled items to be refunded for Pre Pay orders
+Feature: Despatched Orders have funds Captured or Refunded depending on number of items despatched and the payment method
+	 In order to ensure Customers are charged the correct amount for items despatched
+	 As a business
+	 When an order is Despatched
+	 I want the value of any despatched items and P&P to be captured for Post Pay orders
+	 And any unfulfilled items to be refunded for Pre Pay orders
 
 
 

@@ -114,6 +114,8 @@ Scenario: Customer places a web order, Pre Deploy, but the order is cancelled Po
 
 ***The above scenarios will be placed using different Domains and Currencies to ensure coverage.
 
+***Will need Item and P&P Promos applied to some of these orders
+
 ***Customer emails will be generated for all events
 
 ***ADRA & IntelliQ checks required

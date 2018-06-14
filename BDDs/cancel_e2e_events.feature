@@ -1,9 +1,9 @@
-Feature:	Cancelled Orders have Pre Pay payments Refunded or Authorised Post Pay payments Released
-		In order to ensure Customers are not charged for cancelled orders
-		As a business
-		When a whole order is Cancelled
-		I want the value of the order including the P&P refunded for Pre Pay orders
-		And for Post Pay orders any Authorised funds will be released
+Feature: Cancelled Orders have Pre Pay payments Refunded or Authorised Post Pay payments Released
+	 In order to ensure Customers are not charged for cancelled orders
+	 As a business
+	 When a whole order is Cancelled
+	 I want the value of the order including the P&P refunded for Pre Pay orders
+	 And for Post Pay orders any Authorised funds will be released
 
 
 Scenario Outline: Customer places a Post-Pay order on the web but the order cannot be fulfilled and the whole order is Cancelled

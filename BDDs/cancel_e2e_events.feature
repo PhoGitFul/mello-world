@@ -16,11 +16,11 @@ Scenario Outline: Customer places a Post-Pay order on the web but the order cann
 	And Cancel Payment notification will be received from Adyen in Core and Order updated
 	And AWS Order History will be updated to show the items and P&P are Cancelled, the Order marked as Complete, and any Payment Service Transactions
 
-	Examples:	|  Payment type	|  	Payment Service	|  	Payment Toggle	|
-			|  Credit Card	|	Payment Service	|	False		|
-			|  Paypal	|	Payment Service	|	False		|
-			|  Credit Card	|	Core		|	True		|
-		        |  Paypal	|	Core		|	True		|
+	Examples:	|  Payment type	| Payment Service	| Payment Toggle	|
+						|  Credit Card	|	Payment Service	|	False						|
+						|  Paypal				|	Payment Service	|	False						|
+						|  Credit Card	|	Core						|	True						|
+		        |  Paypal				|	Core						|	True		|
 
 
 Scenario Outline: Customer places a Pre-Pay APM order on the web but the order cannot be fulfilled and the whole order is Cancelled
@@ -33,9 +33,9 @@ Scenario Outline: Customer places a Pre-Pay APM order on the web but the order c
 	And Refund Payment notification will be received from Adyen in Core and the Order updated
 	And AWS Order History will be updated to show the items and P&P are Cancelled, the Order marked as Complete, and any Payment Service Transactions
 
-	Examples:	|  	Payment Service	|  	Payment Toggle	|
-			|	Payment Service	|	False		|
-			|	Core		|	True		|
+	Examples:	| Payment Service	| Payment Toggle	|
+						|	Payment Service	|	False						|
+						|	Core						|	True						|
 
 
 Scenario Outline: Customer places a web order in Store but the order cannot be fulfilled and the whole order is Cancelled
@@ -47,9 +47,9 @@ Scenario Outline: Customer places a web order in Store but the order cannot be f
 	And the order in Core updated
 	And AWS Order History will be updated to show the items and P&P are Cancelled and the Order marked as Complete
 
-	Examples:	|  	Payment Toggle	|
-			|	False		|
-			|	True		|
+	Examples:	| Payment Toggle	|
+						|	False						|
+						|	True						|
 
 
 Scenario Outline: Customer places a Post-Pay order on the Phone App but the order cannot be fulfilled and the whole order is Cancelled
@@ -62,11 +62,11 @@ Scenario Outline: Customer places a Post-Pay order on the Phone App but the orde
 	And Cancel Payment notification will be received from Adyen in Core and Order updated
 	And AWS Order History will be updated to show the items and P&P are Cancelled, the Order marked as Complete, and any Payment Service Transactions
 
-	Examples:	|  Payment type	|  	Payment Service	|  	Payment Toggle	|
-			|  Credit Card	|	Payment Service	|	False		|
-			|  Paypal	|	Payment Service	|	False		|
-			|  Credit Card	|	Core		|	True		|
-			|  Paypal	|	Core		|	True		|
+	Examples:	|  Payment type	| Payment Service	| Payment Toggle	|
+						|  Credit Card	|	Payment Service	|	False						|
+						|  Paypal				|	Payment Service	|	False						|
+						|  Credit Card	|	Core						|	True						|
+						|  Paypal				|	Core						|	True						|
 
 
 Scenario Outline: Customer places a Post-Pay order on the web, Pre Deploy, but the order is cancelled Post Deploy
@@ -80,7 +80,7 @@ Scenario Outline: Customer places a Post-Pay order on the web, Pre Deploy, but t
 
 	Examples:	|  Payment type	|
 		        |  Credit Card	|
-			|  Paypal	|
+						|  Paypal				|
 
 
 Scenario: Customer places a Pre-Pay APM order on the web, Pre Deploy, but the order is cancelled Post Deploy
